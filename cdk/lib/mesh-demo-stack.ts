@@ -104,7 +104,6 @@ export class MeshDemoStack extends Stack {
          * - Necessary to make the application load balancer accessible over the internet.
          */
         {
-          // TODO - understand cidrMask and cidr blocks
           name: "ingress",
           subnetType: SubnetType.PUBLIC,
           cidrMask: 24,
@@ -115,7 +114,6 @@ export class MeshDemoStack extends Stack {
          * - One subnet is created inside each availability zone
          */
         {
-          // TODO - understand cidrMask and cidr blocks
           name: "application",
           subnetType: SubnetType.PRIVATE,
           cidrMask: 24,
