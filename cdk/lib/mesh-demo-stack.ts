@@ -415,7 +415,7 @@ export class MeshDemoStack extends Stack {
   createFargateServices(genericServiceRepository: IRepository, appMeshRepository: any, ...services: string[]) {
     /**
      * The first service is a special case; before we enable app mesh, gateway
-     * needs to reference an actual generic-service.mesh.local service (COLOR_TELLER_ENDPOINT);
+     * needs to reference an actual genericService1.mesh.local service (MESSAGE_URL);
      * the other services need a unique namespace for now because CDK won't
      * allow reusing the same service name (although we can do this without
      * CDK; this is supported by Cloud Map / App Mesh, which uses Cloud
